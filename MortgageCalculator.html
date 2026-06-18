@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Payment Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Mortgage Payment Calculator</h1>
+        </header>
+
+        <main>
+
+            <section class="image-section">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800" alt="House">
+            </section>
+
+            <section class="calculator">
+
+                <label for="principal">Loan Principal ($)</label>
+                <input type="number" id="principal" placeholder="225000">
+
+                <label for="rate">Yearly Interest Rate (%)</label>
+                <input type="number" id="rate" step="0.01" placeholder="7.25">
+
+                <label for="years">Mortgage Length</label>
+                <select id="years">
+                    <option value="10">10 Years</option>
+                    <option value="15">15 Years</option>
+                    <option value="30">30 Years</option>
+                </select>
+
+                <button onclick="calculateMortgage()">
+                    Calculate Payment
+                </button>
+
+                <h2 id="result">$0.00</h2>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>
+                GitHub Repository:
+                <a href="https://github.com/Elishell79/Project-2-Mortgage-Calculator" target="_blank">
+                    View Project
+                </a>
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
